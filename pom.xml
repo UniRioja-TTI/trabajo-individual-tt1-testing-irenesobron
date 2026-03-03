@@ -72,7 +72,7 @@
 						<configuration>
 							<inputSpec>http://localhost:8080/swagger/v1/swagger.json</inputSpec>
 							<generatorName>java</generatorName>
-							<output>${project.basedir}/src/main/java/com/tt1/trabajo/utils</output>
+							<output>${project.basedir}/src/main/java/utils</output>
 							<packageName>com.tt1.trabajo.utils.apiclient</packageName>
 							<apiPackage>com.tt1.trabajo.utils.apiclient.api</apiPackage>
 							<modelPackage>com.tt1.trabajo.utils.apiclient.model</modelPackage>
