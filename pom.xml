@@ -60,6 +60,26 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+				<groupId>org.openapitools</groupId>
+				<artifactId>openapi-generator-maven-plugin</artifactId>
+				<version>7.17.0</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>generate</goal>
+						</goals>
+						<configuration>
+							<inputSpec>http://localhost:8080/swagger/v1/swagger.json</inputSpec>
+							<generatorName>java</generatorName>
+							<output>${project.basedir}/src/main/java</output>
+							<packageName>com.tt1.trabajo.utils.apiclient</packageName>
+							<apiPackage>com.tt1.trabajo.utils.apiclient.api</apiPackage>
+							<modelPackage>com.tt1.trabajo.utils.apiclient.model</modelPackage>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 
