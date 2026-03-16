@@ -4,9 +4,10 @@ import modelo.Destinatario;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.slf4j.LoggerFactory;
 import servicios.EnviarEmailsService;
 
-import java.util.logging.Logger;
+import org.slf4j.Logger;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -16,7 +17,7 @@ public class EnviarEmailsServiceTest {
 
     @BeforeEach
     void setUp() {
-        log = Logger.getLogger(EnviarEmailsService.class.getName());
+        log = LoggerFactory.getLogger(EnviarEmailsService.class.getName());
         service = new EnviarEmailsService(log);
     }
     @AfterEach
